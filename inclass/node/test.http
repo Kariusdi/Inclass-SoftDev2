@@ -1,0 +1,25 @@
+GET http://localhost:3000
+###
+GET http://localhost:3000/api/customer
+###
+GET http://localhost:3000/api/customer/63b4ef4ffceb7cd1790e1b10
+###
+POST http://localhost:3000/api/customer HTTP/1.1
+Content-Type: application/json
+
+{
+    "CustomerId": 1005,
+    "FullName": "Pon",
+    "Address": "Bangkok"
+}
+###
+PUT http://localhost:3000/api/customer/63b4ef4ffceb7cd1790e1b10 HTTP/1.1
+Content-Type: application/json
+
+{
+    "CustomerId": 1001,
+    "FullName": "Chonakan",
+    "Address": "Bangkok"
+}
+###
+DELETE http://localhost:3000/api/customer/63b4f9494766b2b900f147c4 HTTP/1.1
